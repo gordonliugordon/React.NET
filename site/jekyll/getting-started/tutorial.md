@@ -407,8 +407,8 @@ Now that the data is available in the `CommentList`, let's render the comments d
 class CommentList extends React.Component {
   render() {
     const commentNodes = this.props.data.map(comment => (
-      <Comment author={comment.Author} key={comment.Id}>
-        {comment.Text}
+      <Comment author={comment.author} key={comment.id}>
+        {comment.text}
       </Comment>
     ));
     return (
